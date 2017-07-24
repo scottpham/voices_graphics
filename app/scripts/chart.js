@@ -1,4 +1,6 @@
 import * as d3 from "d3";
+const data = require("../assets/workforce.json");
+console.log(data);
 
 console.log(d3);
 
