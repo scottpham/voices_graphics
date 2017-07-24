@@ -1,3 +1,6 @@
+import * as d3 from "d3";
+
+console.log(d3);
 
 const Chart = {
   create(opts){
@@ -11,7 +14,9 @@ const Chart = {
     return instance;
 
   },
-  parameters(){},
+  parameters(){
+  
+  },
   message: "What it is",
   draw(){
     this.parameters();

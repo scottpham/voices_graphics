@@ -1,5 +1,6 @@
 import { Chart } from "./chart.js";
 console.log(Chart);
+console.log("this message is from main.js");
 
 
 const app = {
