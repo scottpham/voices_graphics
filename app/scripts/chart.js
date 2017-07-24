@@ -78,7 +78,8 @@ const Chart = {
   },
   drawAxes(){
     this.yAxis = d3.axisLeft()
-      .scale(this.yScale)
+      .scale(this.yScale);
+
     this.xAxis = d3.axisBottom()
       .scale(this.xScale);
     
@@ -91,7 +92,16 @@ const Chart = {
       .attr("class", "xaxis")
       .attr("transform", `translate(0, ${this.height})`)
       .call(this.xAxis);
+    
+    //grid lines
+    this.yGrid = d3.axisLeft()
+      .scale(this.yScale)
+      .tickSize(-this.width)
+      .tickFormat("");
 
+    this.plot.append("g")
+      .attr("class", "grid")
+      .call(this.yGrid);
   },
   draw(){
     this.parameters();
