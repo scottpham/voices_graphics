@@ -1,6 +1,7 @@
 $sans: 'Open Sans', Helvetica, sans-serif;
 $black: #222;
 $gray: #666;
+$orange: orange;
 
 h1 {
   font-family: $sans;
@@ -13,3 +14,9 @@ h2 {
   color: $gray;
   font-size: 25px;
 }
+
+.percent_workforce {
+  stroke: $orange;
+  stroke-width: 3px;
+}
+
