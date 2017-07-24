@@ -1,7 +1,6 @@
 import * as d3 from "d3";
 const workforceData = require("../assets/workforce.json");
 
-
 const parseDate = d3.timeParse("%Y");
 
 // fix the data
@@ -24,10 +23,10 @@ const Chart = {
     return instance;
   },
   margin: {
-    left: 25,
-    right: 25,
+    left: 35,
+    right: 30,
     top: 10,
-    bottom: 25
+    bottom: 35
   },
   el: "#graphic",
   ratio: "0.5", //width-height ratio
@@ -84,12 +83,12 @@ const Chart = {
       .scale(this.xScale);
     
     this.plot.append("g")
-      .attr("class", "yaxis")
+      .attr("class", "axis yaxis")
       .attr("transform", "translate(0,0)")
       .call(this.yAxis);
 
     this.plot.append("g")
-      .attr("class", "xaxis")
+      .attr("class", "axis xaxis")
       .attr("transform", `translate(0, ${this.height})`)
       .call(this.xAxis);
     
@@ -102,6 +101,7 @@ const Chart = {
     this.plot.append("g")
       .attr("class", "grid")
       .call(this.yGrid);
+
   },
   draw(){
     this.parameters();

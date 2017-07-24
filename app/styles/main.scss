@@ -1,12 +1,16 @@
-$sans: 'Open Sans', Helvetica, sans-serif;
+$sans: Helvetica,
+sans-serif;
 $black: #222;
 $gray: #666;
 $orange: orange;
+$light-gray: #888;
+$faint-gray: lighten(#888, 20%);
+$background: lighten(whitesmoke, 2%);
 
 h1 {
   font-family: $sans;
   color: $black;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h2 {
@@ -15,10 +19,50 @@ h2 {
   font-size: 25px;
 }
 
+p {
+  color: $black;
+  font-family: $sans;
+  font-size: 20px;
+}
+.grid {
+
+  line {
+    stroke: $faint-gray;
+    stroke-width: 0.5px;
+  }
+
+  path.domain {
+    opacity: 0;
+  }
+}
+
+
+.axis {
+  .tick {
+    line,
+    path {
+      stroke: $light-gray;
+    }
+
+    text {
+      fill: $gray;
+      font-size: 18px;
+    }
+  }
+
+  path.domain {
+    stroke: $light-gray;
+  }
+}
+
+
+
+
 
 //container
 #graphic {
   width: 800px;
+  background-color: $background;
 }
 
 // line
@@ -26,5 +70,3 @@ h2 {
   stroke: $orange;
   stroke-width: 3px;
 }
-
-

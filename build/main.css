@@ -1,15 +1,39 @@
 h1 {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   color: #222;
-  font-size: 30px; }
+  font-size: 28px; }
 
 h2 {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   color: #666;
   font-size: 25px; }
 
+p {
+  color: #222;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px; }
+
+.grid line {
+  stroke: #bbbbbb;
+  stroke-width: 0.5px; }
+
+.grid path.domain {
+  opacity: 0; }
+
+.axis .tick line,
+.axis .tick path {
+  stroke: #888; }
+
+.axis .tick text {
+  fill: #666;
+  font-size: 18px; }
+
+.axis path.domain {
+  stroke: #888; }
+
 #graphic {
-  width: 800px; }
+  width: 800px;
+  background-color: #fafafa; }
 
 .percent_workforce {
   stroke: orange;
