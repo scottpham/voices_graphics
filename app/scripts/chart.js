@@ -77,13 +77,18 @@ const Chart = {
   },
   drawUS(){
     const that = this;
-
+   
+    // filter data because some values are null
+    const filteredData = workforceData.filter(function(d){
+      return d.percent_minority_us > 1;
+    });
+    
     this.line2 = d3.line()
-      .x( d => this.xScale(d.year) )
-      .y( d => this.yScale(d.percent_minority_us) );
+      .x( d => this.xScale(d.year))
+      .y( d => this.yScale(d.percent_minority_us));
 
     this.plot.append("path")
-      .datum(workforceData)
+      .datum(filteredData)
       .style("fill", "none")
       .style("stroke-linecap", "round")
       .attr("class", "percent_us")
