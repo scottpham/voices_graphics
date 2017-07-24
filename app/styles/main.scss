@@ -1,0 +1,15 @@
+$sans: 'Open Sans', Helvetica, sans-serif;
+$black: #222;
+$gray: #666;
+
+h1 {
+  font-family: $sans;
+  color: $black;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: $sans;
+  color: $gray;
+  font-size: 25px;
+}

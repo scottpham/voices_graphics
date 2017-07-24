@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../app/styles/main.scss"
+	],
+	"names": [],
+	"mappings": "AAIA,AAAA,EAAE,CAAC;EACD,WAAW,EALN,WAAW,EAAE,SAAS,EAAE,UAAU;EAMvC,KAAK,EALC,IAAI;EAMV,SAAS,EAAE,IAAI,GAChB;;AAED,AAAA,EAAE,CAAC;EACD,WAAW,EAXN,WAAW,EAAE,SAAS,EAAE,UAAU;EAYvC,KAAK,EAVA,IAAI;EAWT,SAAS,EAAE,IAAI,GAChB"
+}
