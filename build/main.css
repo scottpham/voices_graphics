@@ -39,8 +39,11 @@ p {
   stroke: orange;
   stroke-width: 3px; }
 
-.percent_us {
+path.percent_us {
   stroke: skyblue;
   stroke-width: 3px; }
+
+circle.percent_us {
+  fill: skyblue; }
 
 /*# sourceMappingURL=main.css.map */

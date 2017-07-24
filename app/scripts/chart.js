@@ -82,6 +82,8 @@ const Chart = {
     const filteredData = workforceData.filter(function(d){
       return d.percent_minority_us > 1;
     });
+
+    this.filteredData = filteredData;
     
     this.line2 = d3.line()
       .x( d => this.xScale(d.year))
@@ -120,7 +122,18 @@ const Chart = {
     this.plot.append("g")
       .attr("class", "grid")
       .call(this.yGrid);
+  },
+  drawDots(){
 
+    console.log(this.filteredData);
+
+    this.plot.selectAll("circle")
+        .data(this.filteredData)
+      .enter().append("circle")
+        .attr('class', "percent_us")
+        .attr("r", 5)
+        .attr("cx", d => { return this.xScale(d.year) })
+        .attr("cy", d => { return this.yScale(d.percent_minority_us) })
   },
   draw(){
     this.parameters();
@@ -129,6 +142,7 @@ const Chart = {
     this.drawAxes();
     this.drawData();
     this.drawUS();
+    this.drawDots();
   }
 }
 
