@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "rm -rf build/* && run-p html sass:watch js serve",
-    "serve": "live-server build/",
+    "start": "rm -rf build/* && run-p html sass:watch serve",
+    "serve": "webpack-dev-server --open",
     "js": "webpack --config webpack.config.js",
     "html": "chokidar 'app/*.html' --initial=true -c 'cp app/index.html build/'",
     "sass": "node-sass --source-map true app/styles/main.scss build/main.css",
