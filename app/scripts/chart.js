@@ -75,6 +75,20 @@ const Chart = {
       .attr("class", "percent_workforce")
       .attr("d", this.line);
   },
+  drawUS(){
+    const that = this;
+
+    this.line2 = d3.line()
+      .x( d => this.xScale(d.year) )
+      .y( d => this.yScale(d.percent_minority_us) );
+
+    this.plot.append("path")
+      .datum(workforceData)
+      .style("fill", "none")
+      .style("stroke-linecap", "round")
+      .attr("class", "percent_us")
+      .attr("d", this.line2);
+  },
   drawAxes(){
     this.yAxis = d3.axisLeft()
       .scale(this.yScale);
@@ -109,6 +123,7 @@ const Chart = {
     this.drawPlot();
     this.drawAxes();
     this.drawData();
+    this.drawUS();
   }
 }
 

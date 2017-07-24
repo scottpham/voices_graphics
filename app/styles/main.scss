@@ -3,6 +3,7 @@ sans-serif;
 $black: #222;
 $gray: #666;
 $orange: orange;
+$blue: skyblue;
 $light-gray: #888;
 $faint-gray: lighten(#888, 20%);
 $background: lighten(whitesmoke, 2%);
@@ -24,6 +25,7 @@ p {
   font-family: $sans;
   font-size: 20px;
 }
+
 .grid {
 
   line {
@@ -55,10 +57,6 @@ p {
   }
 }
 
-
-
-
-
 //container
 #graphic {
   width: 800px;
@@ -68,5 +66,10 @@ p {
 // line
 .percent_workforce {
   stroke: $orange;
+  stroke-width: 3px;
+}
+
+.percent_us {
+  stroke: $blue;
   stroke-width: 3px;
 }
