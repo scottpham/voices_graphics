@@ -8,6 +8,9 @@ h2 {
   color: #666;
   font-size: 25px; }
 
+#graphic {
+  width: 800px; }
+
 .percent_workforce {
   stroke: orange;
   stroke-width: 3px; }

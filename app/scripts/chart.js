@@ -1,11 +1,14 @@
 import * as d3 from "d3";
 const workforceData = require("../assets/workforce.json");
 
+
+const parseDate = d3.timeParse("%Y");
+
 // fix the data
 workforceData.forEach( function(each){
   each.percent_minority_workforce = +each.percent_minority_workforce;
   each.percent_minority_us = +each.percent_minority_us;
-  each.year = +each.year;
+  each.year = parseDate(each.year);
 });
 
 window.workforceData = workforceData;
@@ -24,7 +27,7 @@ const Chart = {
     left: 25,
     right: 25,
     top: 10,
-    bottom: 10
+    bottom: 25
   },
   el: "#graphic",
   ratio: "0.5", //width-height ratio
@@ -73,11 +76,28 @@ const Chart = {
       .attr("class", "percent_workforce")
       .attr("d", this.line);
   },
-  message: "What it is",
+  drawAxes(){
+    this.yAxis = d3.axisLeft()
+      .scale(this.yScale)
+    this.xAxis = d3.axisBottom()
+      .scale(this.xScale);
+    
+    this.plot.append("g")
+      .attr("class", "yaxis")
+      .attr("transform", "translate(0,0)")
+      .call(this.yAxis);
+
+    this.plot.append("g")
+      .attr("class", "xaxis")
+      .attr("transform", `translate(0, ${this.height})`)
+      .call(this.xAxis);
+
+  },
   draw(){
     this.parameters();
     this.createScales();
     this.drawPlot();
+    this.drawAxes();
     this.drawData();
   }
 }
