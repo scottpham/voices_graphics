@@ -1,0 +1,268 @@
+[
+    {
+        "year": "1978",
+        "work_force_total": "43000",
+        "minorities_work_force": "1700",
+        "percent_minority_workforce": "3.95",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1979",
+        "work_force_total": "45000",
+        "minorities_work_force": "1900",
+        "percent_minority_workforce": "4.22",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1980",
+        "work_force_total": "47000",
+        "minorities_work_force": "2300",
+        "percent_minority_workforce": "4.89",
+        "percent_minority_us": "20.28"
+    },
+    {
+        "year": "1981",
+        "work_force_total": "45500",
+        "minorities_work_force": "2400",
+        "percent_minority_workforce": "5.27",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1982",
+        "work_force_total": "49000",
+        "minorities_work_force": "2700",
+        "percent_minority_workforce": "5.51",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1983",
+        "work_force_total": "50000",
+        "minorities_work_force": "2800",
+        "percent_minority_workforce": "5.6",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1984",
+        "work_force_total": "50400",
+        "minorities_work_force": "2900",
+        "percent_minority_workforce": "5.75",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1985",
+        "work_force_total": "53800",
+        "minorities_work_force": "3100",
+        "percent_minority_workforce": "5.76",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1986",
+        "work_force_total": "54000",
+        "minorities_work_force": "3400",
+        "percent_minority_workforce": "6.3",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1987",
+        "work_force_total": "54700",
+        "minorities_work_force": "3600",
+        "percent_minority_workforce": "6.56",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1988",
+        "work_force_total": "55300",
+        "minorities_work_force": "3900",
+        "percent_minority_workforce": "7.02",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1989",
+        "work_force_total": "56200",
+        "minorities_work_force": "4200",
+        "percent_minority_workforce": "7.54",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1990",
+        "work_force_total": "56900",
+        "minorities_work_force": "4500",
+        "percent_minority_workforce": "7.86",
+        "percent_minority_us": "24.36"
+    },
+    {
+        "year": "1991",
+        "work_force_total": "55700",
+        "minorities_work_force": "4900",
+        "percent_minority_workforce": "8.72",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1992",
+        "work_force_total": "54500",
+        "minorities_work_force": "5100",
+        "percent_minority_workforce": "9.39",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1993",
+        "work_force_total": "53600",
+        "minorities_work_force": "5500",
+        "percent_minority_workforce": "10.25",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1994",
+        "work_force_total": "53700",
+        "minorities_work_force": "5600",
+        "percent_minority_workforce": "10.49",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1995",
+        "work_force_total": "53800",
+        "minorities_work_force": "5900",
+        "percent_minority_workforce": "10.91",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1996",
+        "work_force_total": "55000",
+        "minorities_work_force": "6100",
+        "percent_minority_workforce": "11.02",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1997",
+        "work_force_total": "54000",
+        "minorities_work_force": "6100",
+        "percent_minority_workforce": "11.35",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1998",
+        "work_force_total": "54700",
+        "minorities_work_force": "6300",
+        "percent_minority_workforce": "11.46",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "1999",
+        "work_force_total": "55100",
+        "minorities_work_force": "6400",
+        "percent_minority_workforce": "11.55",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2000",
+        "work_force_total": "56200",
+        "minorities_work_force": "6700",
+        "percent_minority_workforce": "11.85",
+        "percent_minority_us": "30.87"
+    },
+    {
+        "year": "2001",
+        "work_force_total": "56400",
+        "minorities_work_force": "6600",
+        "percent_minority_workforce": "11.64",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2002",
+        "work_force_total": "54400",
+        "minorities_work_force": "6600",
+        "percent_minority_workforce": "12.07",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2003",
+        "work_force_total": "54700",
+        "minorities_work_force": "6900",
+        "percent_minority_workforce": "12.53",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2004",
+        "work_force_total": "54200",
+        "minorities_work_force": "7000",
+        "percent_minority_workforce": "12.95",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2005",
+        "work_force_total": "54100",
+        "minorities_work_force": "7300",
+        "percent_minority_workforce": "13.42",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2006",
+        "work_force_total": "53600",
+        "minorities_work_force": "7400",
+        "percent_minority_workforce": "13.73",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2007",
+        "work_force_total": "55000",
+        "minorities_work_force": "7400",
+        "percent_minority_workforce": "13.43",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2008",
+        "work_force_total": "52600",
+        "minorities_work_force": "7100",
+        "percent_minority_workforce": "13.52",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2009",
+        "work_force_total": "46700",
+        "minorities_work_force": "6300",
+        "percent_minority_workforce": "13.41",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2010",
+        "work_force_total": "41500",
+        "minorities_work_force": "5500",
+        "percent_minority_workforce": "13.26",
+        "percent_minority_us": "36.25"
+    },
+    {
+        "year": "2011",
+        "work_force_total": "41600",
+        "minorities_work_force": "5300",
+        "percent_minority_workforce": "12.79",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2012",
+        "work_force_total": "40600",
+        "minorities_work_force": "5000",
+        "percent_minority_workforce": "12.32",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2013",
+        "work_force_total": "38000",
+        "minorities_work_force": "4700",
+        "percent_minority_workforce": "12.37",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2014",
+        "work_force_total": "36700",
+        "minorities_work_force": "4900",
+        "percent_minority_workforce": "13.34",
+        "percent_minority_us": ""
+    },
+    {
+        "year": "2015",
+        "work_force_total": "32900",
+        "minorities_work_force": "4200",
+        "percent_minority_workforce": "12.76",
+        "percent_minority_us": "38.54"
+    }
+]
