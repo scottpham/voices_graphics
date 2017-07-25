@@ -125,8 +125,6 @@ const Chart = {
   },
   drawDots(){
 
-    console.log(this.filteredData);
-
     this.plot.selectAll("circle")
         .data(this.filteredData)
       .enter().append("circle")

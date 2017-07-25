@@ -1,15 +1,27 @@
 import { Chart } from "./chart.js";
-console.log(Chart);
+import { demoChart } from "./demo.js";
 window.Chart = Chart;
-
+window.demoChart = demoChart;
 
 const app = {
-  init(){
-    const myChart = Chart.create({
-      el: "#graphic1"
+  makeDemoChart(){
+    const myChart = demoChart.create({
+      el: "#graphic2"
     });
+
     myChart.draw();
-    window.myChart = myChart;
+    window.chart2 = myChart;
+  },
+  makeMinorityChart(){
+   const myChart = Chart.create({
+     el: "#graphic1"
+   });
+   myChart.draw();
+   window.chart1 = myChart;
+  },
+  init(){
+    this.makeMinorityChart();
+    this.makeDemoChart();
   }
 }
 
