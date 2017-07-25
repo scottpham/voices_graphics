@@ -6,7 +6,7 @@ $orange: orange;
 $blue: skyblue;
 $light-gray: #888;
 $faint-gray: lighten(#888, 20%);
-$background: lighten(whitesmoke, 3%);
+$background: lighten(whitesmoke, 2%);
 
 h1 {
   font-family: $sans;
@@ -65,17 +65,4 @@ p {
   padding: 5px;
 }
 
-// line
-.percent_workforce {
-  stroke: $orange;
-  stroke-width: 3px;
-}
-
-path.percent_us {
-    stroke: $blue;
-    stroke-width: 3px;
-}
-
-circle.percent_us {
-  fill: $blue;
-}
+@import 'newsroomMinorities';
