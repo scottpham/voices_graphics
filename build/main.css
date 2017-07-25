@@ -31,9 +31,11 @@ p {
 .axis path.domain {
   stroke: #888; }
 
-#graphic {
+.graphic_container {
   width: 800px;
-  background-color: #fafafa; }
+  background-color: #fdfdfd;
+  margin: 5px;
+  padding: 5px; }
 
 .percent_workforce {
   stroke: orange;

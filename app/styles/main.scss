@@ -6,7 +6,7 @@ $orange: orange;
 $blue: skyblue;
 $light-gray: #888;
 $faint-gray: lighten(#888, 20%);
-$background: lighten(whitesmoke, 2%);
+$background: lighten(whitesmoke, 3%);
 
 h1 {
   font-family: $sans;
@@ -58,9 +58,11 @@ p {
 }
 
 //container
-#graphic {
+.graphic_container {
   width: 800px;
   background-color: $background;
+  margin: 5px;
+  padding: 5px;
 }
 
 // line
