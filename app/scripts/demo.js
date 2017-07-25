@@ -9,11 +9,11 @@ const dData = {};
 _.keys(demoData).forEach( function(key){
     // get the key
     const obj = demoData[key]; 
-    
+    // every key will have an array of key/values
     const result = [];
     
     Object.keys(obj).forEach(function(each){
-      if (each == "geography"){
+      if (each === "geography"){
         return;
       } else {
         const res = { key: each, value: obj[each] };
@@ -23,14 +23,15 @@ _.keys(demoData).forEach( function(key){
     dData[key] = result;
  });
 
-console.log(dData);
+// use this
+const us = dData.us.sort( function(a, b){
+  return d3.ascending(+a.value, +b.value);
+});
 
+window.us = us;
+window.dData = dData;
 window.demoData = demoData;
 window.d3 = d3;
-
-// fix the data
-//demoData.forEach( function(each){
-//});
 
 const demoChart = {
   create(opts){
@@ -43,7 +44,7 @@ const demoChart = {
     return instance;
   },
   margin: {
-    left: 110,
+    left: 140,
     right: 30,
     top: 10,
     bottom: 35
@@ -60,16 +61,18 @@ const demoChart = {
     const that = this;
     
     const xDomain = [0, 100];
-    const yDomain = d3.keys(demoData.us);
-     
+    
+    const yDomain = dData.us.map( each => each.key);
+
     this.xScale = d3.scaleLinear()
       .range([0, this.width])
       .domain(xDomain);
 
     this.yScale = d3.scaleBand()
       .range([this.height, 0])
+      .round(true)
       .domain(yDomain)
-      .padding(0.1);
+      .padding(0.2);
   },
   drawPlot(){
     document.querySelector(this.el).innerHTML = "";
@@ -84,17 +87,19 @@ const demoChart = {
   },
   drawData(){
     const that = this;
-    const us = dData.us;
+   // const us = dData.us;
+    console.log(us);
     
     const group = this.plot.append("g")
       .attr("class", "demoBars");
+    const barHeight = this.height / 8;
 
     group.selectAll("rect")
       .data(us)
       .enter()
       .append('rect')
       .attr("class", "usBar")
-      .attr('height', 20)
+      .attr('height', that.yScale.bandwidth())
       .attr('x', 0)
       .attr('y', function(d, i) { 
         return that.yScale(d.key); 
