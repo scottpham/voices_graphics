@@ -87,8 +87,6 @@ const demoChart = {
   },
   drawData(){
     const that = this;
-   // const us = dData.us;
-    console.log(us);
     
     const group = this.plot.append("g")
       .attr("class", "demoBars");
@@ -106,8 +104,7 @@ const demoChart = {
       })
       .attr('width', function(d, i){ 
         return that.xScale(d.value) 
-      })
-      .style('fill', 'black');
+      });
   },
   drawAxes(){
     this.yAxis = d3.axisLeft()

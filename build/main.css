@@ -38,14 +38,17 @@ p {
   padding: 5px; }
 
 .percent_workforce {
-  stroke: orange;
+  stroke: #F38C21;
   stroke-width: 3px; }
 
 path.percent_us {
-  stroke: skyblue;
+  stroke: #0099FF;
   stroke-width: 3px; }
 
 circle.percent_us {
-  fill: skyblue; }
+  fill: #0099FF; }
+
+.usBar {
+  fill: #00B37C; }
 
 /*# sourceMappingURL=main.css.map */
