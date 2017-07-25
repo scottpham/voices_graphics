@@ -1,4 +1,8 @@
 import * as d3 from "d3";
+import * as _ from 'lodash';
+
+console.log(_);
+
 const demoData = require("../assets/newsroom_demo.json");
 
 window.demoData = demoData;
@@ -38,8 +42,6 @@ const demoChart = {
     const xDomain = [0, 100];
     const yDomain = d3.keys(demoData.us);
      
-    console.log(yDomain);
-
     this.xScale = d3.scaleLinear()
       .range([0, this.width])
       .domain(xDomain);
@@ -67,19 +69,34 @@ const demoChart = {
     
     console.log(us);
     
+    const usArray = [];
+
+    Object.keys(us).forEach( each => {
+      const obj = {
+        key: each,
+        value: us[each]
+      }
+      usArray.push(obj); 
+    });
+
+    console.log(usArray);
+    
     const group = this.plot.append("g")
       .attr("class", "demoBars");
 
     group.selectAll("rect")
-      .data(us)
+      .data(usArray)
       .enter()
       .append('rect')
+      .attr("class", "usBar")
       .attr('height', 20)
       .attr('x', 0)
       .attr('y', function(d, i) { 
-        return that.yScale(i); 
+        return that.yScale(d.key); 
       })
-      .attr('width', function(d, i){ return 0; })
+      .attr('width', function(d, i){ 
+        return that.xScale(d.value) 
+      })
       .style('fill', 'black');
   },
   drawAxes(){
