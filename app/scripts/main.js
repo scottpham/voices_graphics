@@ -1,9 +1,20 @@
 import { Chart } from "./chart.js";
 import { demoChart } from "./demo.js";
+import { wapoChart } from "./wapo.js";
+
 window.Chart = Chart;
 window.demoChart = demoChart;
 
 const app = {
+  makeWapoChart(){
+    const myChart = wapoChart.create({
+      el: "#graphic3"
+    });
+
+     myChart.draw();
+
+     window.wapoChart = myChart;
+  },
   makeDemoChart(){
     const myChart = demoChart.create({
       el: "#graphic2"
@@ -22,6 +33,7 @@ const app = {
   init(){
     this.makeMinorityChart();
     this.makeDemoChart();
+    this.makeWapoChart();
   }
 }
 
