@@ -1,9 +1,29 @@
 import * as d3 from "d3";
 import * as _ from 'lodash';
 
-console.log(_);
-
 const demoData = require("../assets/newsroom_demo.json");
+
+// recast the data as key, value pairs
+const dData = {};
+
+_.keys(demoData).forEach( function(key){
+    // get the key
+    const obj = demoData[key]; 
+    
+    const result = [];
+    
+    Object.keys(obj).forEach(function(each){
+      if (each == "geography"){
+        return;
+      } else {
+        const res = { key: each, value: obj[each] };
+        result.push(res);
+      }  
+  });
+    dData[key] = result;
+ });
+
+console.log(dData);
 
 window.demoData = demoData;
 window.d3 = d3;
@@ -64,28 +84,13 @@ const demoChart = {
   },
   drawData(){
     const that = this;
-//    const us = demoData.filter( each => each.geography == "us");
-    const us = demoData.us;
-    
-    console.log(us);
-    
-    const usArray = [];
-
-    Object.keys(us).forEach( each => {
-      const obj = {
-        key: each,
-        value: us[each]
-      }
-      usArray.push(obj); 
-    });
-
-    console.log(usArray);
+    const us = dData.us;
     
     const group = this.plot.append("g")
       .attr("class", "demoBars");
 
     group.selectAll("rect")
-      .data(usArray)
+      .data(us)
       .enter()
       .append('rect')
       .attr("class", "usBar")
@@ -136,4 +141,4 @@ const demoChart = {
 }
 
 
-export { demoChart };
+export { demoChart, dData };

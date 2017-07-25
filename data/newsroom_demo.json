@@ -1,5 +1,6 @@
 {
     "us": {
+        "geography": "us",
         "white": "61.5",
         "black": "12.3",
         "native": "0.6",
@@ -12,6 +13,7 @@
         "other_plus": "2.5"
     },
     "nyt": {
+        "geography": "nyt",
         "white": "78.2",
         "black": "7.1",
         "native": "0",
@@ -24,6 +26,8 @@
         "other_plus": "0"
     },
     "new_york_msa": {
+        "geography": "new_york_msa",
+        "white": "46.9",
         "black": "15.7",
         "native": "0.1",
         "asian": "10.9",
@@ -35,6 +39,7 @@
         "other_plus": "2.2"
     },
     "wsj": {
+        "geography": "wsj",
         "white": "79.5",
         "black": "4.4",
         "native": "0.1",
@@ -47,6 +52,7 @@
         "other_plus": "1"
     },
     "wapo": {
+        "geography": "wapo",
         "white": "69",
         "black": "15.5",
         "native": "0.2",
@@ -59,6 +65,7 @@
         "other_plus": "0"
     },
     "washington_msa": {
+        "geography": "washington_msa",
         "white": "46.2",
         "black": "24.8",
         "native": "",
@@ -71,6 +78,7 @@
         "other_plus": "3.6"
     },
     "lat": {
+        "geography": "lat",
         "white": "66.4",
         "black": "4.8",
         "native": "0",
@@ -83,6 +91,7 @@
         "other_plus": "3.6"
     },
     "la_msa": {
+        "geography": "la_msa",
         "white": "30",
         "black": "6.5",
         "native": "0.2",
