@@ -1,5 +1,5 @@
 # move files to place where they can be useful
-move:
+move: newsroom_demo.json newsroom_demo.csv
 	cp workforce.json ../app/assets/
 	cp newsroom_demo.json ../app/assets/
 
