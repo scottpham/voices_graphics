@@ -1,0 +1,12 @@
+.table {
+  font-family: $sans;
+  font-size: 14px;
+  color: $black;
+  border: 1px solid $gray;
+  border-collapse: collapse;
+ 
+  th, td {
+    border: 1px solid $gray;
+    padding: 10px;
+  }
+}
