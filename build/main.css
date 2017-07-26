@@ -33,7 +33,7 @@ p {
 
 .graphic_container {
   width: 650px;
-  background-color: #fafafa;
+  background-color: white;
   margin: 5px;
   padding: 5px; }
 
@@ -50,5 +50,13 @@ circle.percent_us {
 
 .usBar {
   fill: #00B37C; }
+
+.grouping {
+  width: 50%;
+  min-height: 50px;
+  float: right; }
+
+#graphic3 .bar {
+  fill: #0099FF; }
 
 /*# sourceMappingURL=main.css.map */

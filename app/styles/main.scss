@@ -18,6 +18,7 @@ $light-gray: #888;
 $faint-gray: lighten(#888, 20%);
 $background: lighten(whitesmoke, 2%);
 
+
 h1 {
   font-family: $sans;
   color: $black;
@@ -70,10 +71,11 @@ p {
 //container
 .graphic_container {
   width: 650px;
-  background-color: $background;
+  background-color: white;
   margin: 5px;
   padding: 5px;
 }
 
 @import 'newsroomMinorities';
 @import 'newsroomDemographics';
+@import 'newspaperDemo';
