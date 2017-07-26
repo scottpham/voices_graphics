@@ -47,25 +47,29 @@ const wapoChart = {
     
     const xDomain = [0, 100];
     
+    // bar width
     this.xScale = d3.scaleLinear()
       .range([0, this.width])
       .domain(xDomain);
 
-
-    // scale for newsrooms
+    // scale for location groupings (define range based on y1)
     this.y0Scale = d3.scaleBand()
-      .range([this.height, 0])
+      .domain(["wapo", "washington_msa"])
       .paddingInner(0.2);
 
-    // y0 domain is location
-    this.y0Scale.domain(["wapo", "washington_msa"]);
-
-    // scale for race
+    // scale for race groupings (whole chart up to down) 
     this.y1Scale = d3.scaleBand()
-      .padding(0.05);
-    // y1 domain is race keys
-    this.y1Scale.domain( dData.wapo.map( each => each.key ) )
-      .rangeRound([0, this.y0Scale.bandwidth()]);
+      .padding(0.05)
+      .rangeRound([this.height, 0])
+      .domain(wapo.map( each => each.key ));
+    
+    // the range is a small group
+    this.y0Scale
+      .range([0, this.y1Scale.bandwidth()]);
+
+    this.colorScale = d3.scaleOrdinal()
+      .domain(["wapo", "washington_msa"])
+      .range(["#004D80", "#CCEBFF"]);
   },
   drawPlot(){
     document.querySelector(this.el).innerHTML = "";
@@ -79,18 +83,23 @@ const wapoChart = {
       .append("g")
       .attr("transform", `translate(${this.margin.left}, ${this.margin.top})`);
   },
-  drawData(){
+  drawData(place){
     const that = this;
     
+    const barHeight = this.y0Scale.bandwidth();
+
+    console.log(dData[place]);
+
     const wapoBars = this.plot.selectAll("bars")
-      .data(wapo)
+      .data(dData[place])
       .enter().append("rect")
         .attr("class", "rect")
         .attr("fill", "black")
       .attr("transform", function( d,i ) { 
-        return `translate(0, ${that.y0Scale('wapo')} )`; 
+        return `translate(0, ${that.y0Scale(place)} )`; 
       })
-      .attr("height", 1)
+      .attr("height", barHeight)
+      .attr("fill", function( d, i ) { return that.colorScale(place); })
       .attr("y", function( d, i ) { return  that.y1Scale(d.key) })
       .attr("width", function( d, i ) { return that.xScale(d.value) });
      
@@ -128,7 +137,8 @@ const wapoChart = {
     this.createScales();
     this.drawPlot();
     this.drawAxes();
-    this.drawData();
+    this.drawData('wapo');
+    this.drawData('washington_msa');
   }
 }
 
