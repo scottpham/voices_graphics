@@ -7,19 +7,6 @@ window.dData = dData;
 window.demoData = demoData;
 window.d3 = d3;
 
-// sort by key
-const wapo = dData.wapo.sort( function(a, b){
-  return d3.ascending(a.key, b.key);
-});
-
-window.wapo = wapo;
-
-const msa = dData.new_york_msa;
-
-window.msa = msa;
-
-
-
 const wapoChart = {
   create(opts){
     const instance = Object.create(this);
@@ -60,11 +47,11 @@ const wapoChart = {
     // scale for location groupings (define range based on y1)
     this.y0Scale = d3.scaleBand()
       .domain([this.paper, this.msa])
-      .paddingInner(0.2);
+      .paddingInner(0.15);
 
     // scale for race groupings (whole chart up to down) 
     this.y1Scale = d3.scaleBand()
-      .padding(0.05)
+      .padding(0.2)
       .rangeRound([this.height, 0])
       .domain(["White", "Black", "Hispanic", "Asian", "Native American", "Other"].reverse());
     
@@ -92,8 +79,6 @@ const wapoChart = {
     const that = this;
     
     const barHeight = this.y0Scale.bandwidth();
-
-    console.log(dData[place]);
 
     const wapoBars = this.plot.selectAll("bars")
       .data(dData[place])
