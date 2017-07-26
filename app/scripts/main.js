@@ -6,6 +6,30 @@ window.Chart = Chart;
 window.demoChart = demoChart;
 
 const app = {
+  makeLATChart(){
+    const myChart = wapoChart.create({
+      el: "#graphic5",
+      paper: 'lat',
+      msa: 'la_msa',
+      colorRange: ["#004D36", "#00B37C"]
+    });
+
+    myChart.draw();
+    
+    window.latChart = myChart;
+  },
+  makeWSJChart(){
+    const myChart = wapoChart.create({
+      el: "#graphic6",
+      paper: "wsj",
+      msa: "new_york_msa",
+      colorRange: ["#7D251C","#D24435"]
+    });  
+
+    myChart.draw();
+
+    window.wsjChart = myChart;
+  },
   makeNYTChart(){
     const myChart = wapoChart.create({
       el: '#graphic3',
@@ -46,6 +70,8 @@ const app = {
     this.makeDemoChart();
     this.makeWapoChart();
     this.makeNYTChart();
+    this.makeLATChart();
+    this.makeWSJChart();
   }
 }
 

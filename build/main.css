@@ -22,14 +22,14 @@ p {
 
 .axis .tick line,
 .axis .tick path {
-  stroke: #888; }
+  stroke: #bbbbbb; }
 
 .axis .tick text {
-  fill: #666;
+  fill: #444444;
   font-size: 18px; }
 
 .axis path.domain {
-  stroke: #888; }
+  stroke: #bbbbbb; }
 
 .graphic_container {
   width: 650px;
@@ -41,7 +41,7 @@ p {
   stroke: #F38C21;
   stroke-width: 3px; }
 
-path.percent_us {
+path.percent_u {
   stroke: #0099FF;
   stroke-width: 3px; }
 
@@ -57,9 +57,6 @@ circle.percent_us {
   float: right; }
   .grouping g.tick > text {
     font-size: 14px; }
-
-#graphic3 .bar {
-  fill: #0099FF; }
 
 span.label {
   font-size: 14px;

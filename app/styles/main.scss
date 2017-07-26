@@ -8,6 +8,7 @@ $green: #00B37C;
 $dark-green: #004D36;
 $light-green: #BEE7D1;
 $dark-orange: #AA5C09;
+$dark-gray: #444444;
 
 $yellow: #EDD849;
 $red: #D24435;
@@ -54,17 +55,17 @@ p {
   .tick {
     line,
     path {
-      stroke: $light-gray;
+      stroke: $faint-gray;
     }
 
     text {
-      fill: $gray;
+      fill: $dark-gray;
       font-size: 18px;
     }
   }
 
   path.domain {
-    stroke: $light-gray;
+    stroke: $faint-gray;
   }
 }
 

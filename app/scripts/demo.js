@@ -1,5 +1,6 @@
 import * as d3 from "d3";
 import * as _ from 'lodash';
+import { wrap } from './wrap.js';
 
 const demoData = require("../assets/newsroom_demo.json");
 
@@ -117,6 +118,7 @@ const demoChart = {
       .attr("class", "axis yaxis")
       .attr("transform", "translate(0,0)")
       .call(this.yAxis);
+
 
     this.plot.append("g")
       .attr("class", "axis xaxis")
