@@ -8,7 +8,7 @@ window.demoChart = demoChart;
 const app = {
   makeWapoChart(){
     const myChart = wapoChart.create({
-      el: "#graphic3"
+      el: "#graphic4"
     });
 
      myChart.draw();

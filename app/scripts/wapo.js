@@ -12,6 +12,12 @@ const wapo = dData.wapo.sort( function(a, b){
   return d3.ascending(a.key, b.key);
 });
 
+window.wapo = wapo;
+
+const msa = dData.new_york_msa;
+
+window.msa = msa;
+
 const wapoChart = {
   create(opts){
     const instance = Object.create(this);
@@ -41,22 +47,29 @@ const wapoChart = {
     
     const xDomain = [0, 100];
     
-    const yDomain = dData.wapo.map( each => each.key);
-
     this.xScale = d3.scaleLinear()
       .range([0, this.width])
       .domain(xDomain);
 
-    this.y1Scale = d3.scaleBand()
-      .padding(0.2);
 
+    // scale for newsrooms
     this.y0Scale = d3.scaleBand()
       .range([this.height, 0])
-      .domain(yDomain)
-      .padding(0.2);
+      .paddingInner(0.2);
+
+    // y0 domain is location
+    this.y0Scale.domain(["wapo", "washington_msa"]);
+
+    // scale for race
+    this.y1Scale = d3.scaleBand()
+      .padding(0.05);
+    // y1 domain is race keys
+    this.y1Scale.domain( dData.wapo.map( each => each.key ) )
+      .rangeRound([0, this.y0Scale.bandwidth()]);
   },
   drawPlot(){
     document.querySelector(this.el).innerHTML = "";
+
     this.svg = d3.select(this.el)
       .append("svg")
       .attr("width", this.outerWidth) 
@@ -69,32 +82,26 @@ const wapoChart = {
   drawData(){
     const that = this;
     
-    const group = this.plot.append("g")
-      .attr("class", "demoBars");
-    const barHeight = this.height / 8;
-
-    group.selectAll("rect")
+    const wapoBars = this.plot.selectAll("bars")
       .data(wapo)
-      .enter()
-      .append('rect')
-      .attr("class", "bar")
-      .attr('height', that.yScale.bandwidth())
-      .attr('x', 0)
-      .attr('y', function(d, i) { 
-        return that.yScale(d.key); 
+      .enter().append("rect")
+        .attr("class", "rect")
+        .attr("fill", "black")
+      .attr("transform", function( d,i ) { 
+        return `translate(0, ${that.y0Scale('wapo')} )`; 
       })
-      .attr('width', function(d, i){ 
-        return that.xScale(d.value) 
-      });
+      .attr("height", 1)
+      .attr("y", function( d, i ) { return  that.y1Scale(d.key) })
+      .attr("width", function( d, i ) { return that.xScale(d.value) });
+     
   },
   drawAxes(){
     this.yAxis = d3.axisLeft()
-      .scale(this.yScale);
+      .scale(this.y1Scale);
 
     this.xAxis = d3.axisBottom()
       .scale(this.xScale)
       .ticks(4);
-    ;
     
     this.plot.append("g")
       .attr("class", "axis yaxis")
