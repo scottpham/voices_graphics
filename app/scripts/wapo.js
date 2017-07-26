@@ -18,6 +18,8 @@ const msa = dData.new_york_msa;
 
 window.msa = msa;
 
+
+
 const wapoChart = {
   create(opts){
     const instance = Object.create(this);
@@ -28,14 +30,17 @@ const wapoChart = {
     });
     return instance;
   },
+  paper: 'wapo',
+  msa: 'washington_msa',
+  colorRange: ["#004D80", "#CCEBFF"],
   margin: {
-    left: 140,
+    left: 110,
     right: 30,
     top: 10,
     bottom: 35
   },
   el: "#graphic",
-  ratio: "0.5", //width-height ratio
+  ratio: "0.7", //width-height ratio
   parameters(){
     this.outerWidth = document.querySelector(this.el).clientWidth;
     this.width = this.outerWidth - this.margin.left - this.margin.right;
@@ -54,22 +59,22 @@ const wapoChart = {
 
     // scale for location groupings (define range based on y1)
     this.y0Scale = d3.scaleBand()
-      .domain(["wapo", "washington_msa"])
+      .domain([this.paper, this.msa])
       .paddingInner(0.2);
 
     // scale for race groupings (whole chart up to down) 
     this.y1Scale = d3.scaleBand()
       .padding(0.05)
       .rangeRound([this.height, 0])
-      .domain(wapo.map( each => each.key ));
+      .domain(["White", "Black", "Hispanic", "Asian", "Native American", "Other"].reverse());
     
     // the range is a small group
     this.y0Scale
       .range([0, this.y1Scale.bandwidth()]);
 
     this.colorScale = d3.scaleOrdinal()
-      .domain(["wapo", "washington_msa"])
-      .range(["#004D80", "#CCEBFF"]);
+      .domain([this.paper, this.msa])
+      .range(this.colorRange);
   },
   drawPlot(){
     document.querySelector(this.el).innerHTML = "";
@@ -137,8 +142,8 @@ const wapoChart = {
     this.createScales();
     this.drawPlot();
     this.drawAxes();
-    this.drawData('wapo');
-    this.drawData('washington_msa');
+    this.drawData(this.paper);
+    this.drawData(this.msa);
   }
 }
 

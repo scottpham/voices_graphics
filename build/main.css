@@ -55,6 +55,8 @@ circle.percent_us {
   width: 50%;
   min-height: 50px;
   float: right; }
+  .grouping g.tick > text {
+    font-size: 14px; }
 
 #graphic3 .bar {
   fill: #0099FF; }
