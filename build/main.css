@@ -59,4 +59,9 @@ circle.percent_us {
 #graphic3 .bar {
   fill: #0099FF; }
 
+span.label {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  padding: 5px; }
+
 /*# sourceMappingURL=main.css.map */
