@@ -1,11 +1,14 @@
 import * as d3 from "d3";
 import * as _ from 'lodash';
 import { dData } from './demo.js';
+import { wrap } from './wrap.js';
 
 // use this
 window.dData = dData;
 window.demoData = demoData;
 window.d3 = d3;
+
+// useful link https://bl.ocks.org/mbostock/3887051
 
 const wapoChart = {
   create(opts){
@@ -21,9 +24,9 @@ const wapoChart = {
   msa: 'washington_msa',
   colorRange: ["#004D80", "#CCEBFF"],
   margin: {
-    left: 110,
-    right: 30,
-    top: 10,
+    left: 115,
+    right: 20,
+    top: 15,
     bottom: 35
   },
   el: "#graphic",
@@ -36,7 +39,6 @@ const wapoChart = {
   },
   createScales(){
     const that = this;
-    
     const xDomain = [0, 100];
     
     // bar width
@@ -105,13 +107,15 @@ const wapoChart = {
     this.plot.append("g")
       .attr("class", "axis yaxis")
       .attr("transform", "translate(0,0)")
-      .call(this.yAxis);
+      .call(this.yAxis)
+    .selectAll('.axis text')
+      .call(wrap, 70);
 
     this.plot.append("g")
       .attr("class", "axis xaxis")
       .attr("transform", `translate(0, ${this.height})`)
       .call(this.xAxis);
-    
+         
     //grid lines
     this.yGrid = d3.axisBottom()
       .scale(this.xScale)

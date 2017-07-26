@@ -6,6 +6,17 @@ window.Chart = Chart;
 window.demoChart = demoChart;
 
 const app = {
+  makeNYTChart(){
+    const myChart = wapoChart.create({
+      el: '#graphic3',
+      paper: 'nyt',
+      msa: 'new_york_msa',
+      colorRange: ["#AA5C09", "#F38C21"],
+    });
+
+    myChart.draw();
+    window.nytChart = myChart;
+  },
   makeWapoChart(){
     const myChart = wapoChart.create({
       el: "#graphic4"
@@ -34,6 +45,7 @@ const app = {
     this.makeMinorityChart();
     this.makeDemoChart();
     this.makeWapoChart();
+    this.makeNYTChart();
   }
 }
 

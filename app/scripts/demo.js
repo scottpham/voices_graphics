@@ -50,7 +50,7 @@ const demoChart = {
     bottom: 35
   },
   el: "#graphic",
-  ratio: "0.5", //width-height ratio
+  ratio: "0.3", //width-height ratio
   parameters(){
     this.outerWidth = document.querySelector(this.el).clientWidth;
     this.width = this.outerWidth - this.margin.left - this.margin.right;
