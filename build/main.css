@@ -5,7 +5,7 @@ h1 {
 
 h2 {
   font-family: Roboto, sans-serif;
-  color: #666;
+  color: #999999;
   font-size: 25px; }
 
 p {
@@ -14,7 +14,7 @@ p {
   font-size: 20px; }
 
 p.sourceLine {
-  color: #666;
+  color: #999999;
   margin-bottom: 2px;
   margin-top: 2px;
   font-family: Roboto, sans-serif;
@@ -32,7 +32,7 @@ p.sourceLine {
   stroke: #bbbbbb; }
 
 .axis .tick text {
-  fill: #444444;
+  fill: #7F7F7F;
   font-size: 18px; }
 
 .axis path.domain {
@@ -49,11 +49,11 @@ p.sourceLine {
   stroke-width: 3px; }
 
 path.percent_us {
-  stroke: #0099FF;
+  stroke: #005EFF;
   stroke-width: 3px; }
 
 circle.percent_us {
-  fill: #0099FF; }
+  fill: #005EFF; }
 
 .usBar {
   fill: #00B37C; }
@@ -93,10 +93,10 @@ span.us {
     font-size: 15px;
     color: #222; }
   .table tr, .table td {
-    border-bottom: 1px solid #888;
+    border-bottom: 1px solid #888888;
     padding: 10px; }
   .table tr.poc {
-    background-color: #004D80;
+    background-color: #00347F;
     color: white; }
 
 div.personBox {
@@ -123,12 +123,12 @@ div.person {
     text-align: center; }
 
 div.person.poc {
-  background-color: #004D80; }
+  background-color: #00347F; }
   div.person.poc p {
     color: white; }
 
 div.person.unconfirmed {
-  background-color: #444444;
+  background-color: #7F7F7F;
   color: white; }
   div.person.unconfirmed p {
     color: white; }

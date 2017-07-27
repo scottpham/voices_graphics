@@ -12,7 +12,8 @@ const app = {
       el: "#graphic5",
       paper: 'lat',
       msa: 'la_msa',
-      colorRange: ["#D1B815", "#333333", "#B3B3B3"]
+      // dark-yellow, dark gray, light gray
+      colorRange: ["#7F5E00", "#333333", "#7F7F7F"]
 
     });
 
@@ -25,7 +26,8 @@ const app = {
       el: "#graphic6",
       paper: "wsj",
       msa: "new_york_msa",
-      colorRange: ["#004D36", "#333333", "#B3B3B3"]
+      // dark green, dark gray, light gray
+      colorRange: ["#627F08", "#333333", "#7F7F7F"]
     });  
 
     myChart.draw();
@@ -37,7 +39,8 @@ const app = {
       el: '#graphic3',
       paper: 'nyt',
       msa: 'new_york_msa',
-      colorRange: ["#7D251C", "#333333", "#B3B3B3"]
+      // purple, dark gray, light gray
+      colorRange: ["#35337F", "#333333", "#7F7F7F"]
     });
 
     myChart.draw();
@@ -49,7 +52,7 @@ const app = {
       paper: "wapo",
       msa: 'washington_msa',
       // red, gray, light gray
-      colorRange: ["#AA5C09", "#333333", "#B3B3B3"]
+      colorRange: ["#7F180D", "#333333", "#7F7F7F"]
     });
 
      myChart.draw();
@@ -59,7 +62,8 @@ const app = {
   makeDemoChart(){
     const myChart = demoChart.create({
       el: "#graphic2",
-      color: "#004D80"
+      // dark blue
+      color: "#00347F"
     });
 
     myChart.draw();

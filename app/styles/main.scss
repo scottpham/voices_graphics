@@ -1,25 +1,29 @@
 $sans: Roboto,
 sans-serif;
 $black: #222;
-$gray: #666;
 $orange: #F38C21;
-$light-orange: #FFEDDC;
-$green: #00B37C;
-$dark-green: #004D36;
-$light-green: #BEE7D1;
-$dark-orange: #AA5C09;
-$dark-gray: #444444;
-
-$yellow: #EDD849;
-$dark-red: #7D251C;
 $red: #D24435;
-$blue: #0099FF;
-$dark-blue: #004D80;
-$light-blue: #CCEBFF;
-$light-gray: #888;
 $faint-gray: lighten(#888, 20%);
 $background: lighten(whitesmoke, 2%);
 
+$blue: #005EFF;
+$dark-blue: #00347F;
+
+$yellow: #FFC200;
+$dark-yellow: #7F5E00;
+
+$red: #FF301A;
+$dark-red: #7F180D;
+
+$green: #C5FF10;
+$dark-green: #627F08;
+
+$purple:#7466FF;
+$dark-purple: #35337F;
+
+$gray: darken(#CCCCCC, 20%);
+$dark-gray: #7F7F7F;
+$light-gray: #888888;
 
 h1 {
   font-family: $sans;
