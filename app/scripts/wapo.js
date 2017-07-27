@@ -24,7 +24,7 @@ const wapoChart = {
   msa: 'washington_msa',
   colorRange: ["#004D80", "#CCEBFF", "black"],
   margin: {
-    left: 90,
+    left: 70,
     right: 20,
     top: 15,
     bottom: 35
