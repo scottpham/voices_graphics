@@ -14,7 +14,6 @@ const app = {
       msa: 'la_msa',
       // dark-yellow, dark gray, light gray
       colorRange: ["#7F5E00", "#333333", "#7F7F7F"]
-
     });
 
     myChart.draw();
@@ -72,8 +71,10 @@ const app = {
   makeMinorityChart(){
    const myChart = Chart.create({
      el: "#graphic1",
-     usColor: "#004D80",
-     newsroomColor: "#F38C21"
+     // dark blue
+     usColor: "#00347F",
+     // light blue
+     newsroomColor: "#005EFF"
    });
    myChart.draw();
    window.chart1 = myChart;
