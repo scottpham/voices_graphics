@@ -264,5 +264,12 @@
         "minorities_work_force": "4200",
         "percent_minority_workforce": "12.76",
         "percent_minority_us": "38.54"
+    },
+    {
+        "year": "2016",
+        "work_force_total": "",
+        "minorities_work_force": "",
+        "percent_minority_workforce": "17",
+        "percent_minority_us": ""
     }
 ]
