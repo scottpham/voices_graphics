@@ -17,37 +17,30 @@
 <body>
 
 <div class="graphic_container">
-  <div class="graphic" id="nyt">
+  <div class="grouping" id="nyt">
     <h2>NYT</h2>
-
-    <!--
-    <div class="personBox">
-      <div class="person">
-        <p>Name</p>
-        <p>Title</p>
+      <div class="person"
+          v-bind:class="{ poc: isPoc(person), unconfirmed: notConfirmed(person) }" 
+          v-for="person in people">
+        <p>{{ person.name }}</p>
+        <p>{{ person.title}}</p>
       </div>
-    </div> 
-    --> 
-    
-    
-    
-    
-    <table class="table">
-      <tr>
-        <th>Title</th>
-        <th>Name</th>
-      </tr> 
-     
-      <tr v-for="person in people"
-          v-bind:class="{ poc: isPoc(person) }">
-        <td>{{ person.title }} </td>
-        <td>{{ person.name }} </td>
-      </tr>
-
-    </table>
   </div>
+
+
+  <div class="grouping" id="wapo">
+    <h2>Wapo</h2>
+      <div class="person"
+          v-bind:class="{ poc: isPoc(person), unconfirmed: notConfirmed(person) }"
+          v-for="person in people">
+        <p>{{ person.name }}</p>
+        <p>{{ person.title}}</p>
+      </div>
+  </div>
+
 </div>
 
+<div style="clear:both"></div>
 <div class="graphic_container">
   <h2>US</h2>
   <div class="graphic" id="graphic2"></div>

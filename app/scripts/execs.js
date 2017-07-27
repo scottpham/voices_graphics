@@ -21,6 +21,13 @@ const nyt = new Vue({
       if (person.ethnicity != "white"){
         return true;
       }
+    },
+    notConfirmed: function(person){
+      if (person.confirmed == "no"){
+        return true;
+      }else {
+        return false;
+      }
     }
   }
 });
