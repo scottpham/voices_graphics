@@ -5,12 +5,16 @@ const Vue = require("./vue.js");
 window.Vue = Vue;
 const nytData = require("../assets/nyt.json");
 const wapoData = require("../assets/wapo.json");
+const chicagoData = require("../assets/chicago.json");
+const latData = require("../assets/lat.json");
 
-nytData.sort(function(a,b){
-  return d3.ascending(a.ethnicity, b.ethnicity);
+const allData = [nytData, wapoData, chicagoData, latData];
+
+allData.forEach( function(each){
+   each.sort(function(a,b){
+    return d3.ascending(a.ethnicity, b.ethnicity);
+  });
 });
-
-console.log(nytData);
 
 const BaseForm = Vue.extend({
    methods: {
@@ -42,6 +46,20 @@ const wapo = new BaseForm({
     people: wapoData
   }
 })
+
+const chicago = new BaseForm({
+  el: "#chicago",
+  data: {
+    people: chicagoData
+  }
+});
+
+const lat = new BaseForm({
+  el: "#lat",
+  data: {
+    people: latData
+  }
+});
 
 window.nyt = nyt;
 

@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Davan Maharaj",
+        "title": "Editor and Publisher",
+        "gender": "Male",
+        "ethnicity": "Indian",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Marc Duvoison",
+        "title": "Managing Editor",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Lawrence Ingrassis",
+        "title": "Managing Editor",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Colin Crawford",
+        "title": "Deputy Managing Editor",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Megan Garvey",
+        "title": "Deputy Managing Editor",
+        "gender": "Female",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Scott Kraft",
+        "title": "Deputy Managing Editor",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Christina Bellantoni",
+        "title": "Assistant Managing Editor",
+        "gender": "Female",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Matt Doig",
+        "title": "Assistant Managing Editor",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Shelby Grad",
+        "title": "Assistant Managing Editor",
+        "gender": "Female",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Mary McNamara",
+        "title": "Assistant Managing Editor",
+        "gender": "Female",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Kim Murphy",
+        "title": "Assistant Managing Editor",
+        "gender": "Female",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Michael Whitley",
+        "title": "Assistant Managing Editor",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Nicholas Goldberg",
+        "title": "Editor nd Editorial Pages",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Juliet Lapidos",
+        "title": "Op-Ed and Sunday Opinion Editor",
+        "gender": "Female",
+        "ethnicity": "Jewish",
+        "confirmed": "no",
+        "link": ""
+    }
+]

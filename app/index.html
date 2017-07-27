@@ -37,7 +37,31 @@
         <p>{{ person.title}}</p>
       </div>
   </div>
+</div>
 
+<div style="clear:both"></div>
+
+<div class="graphic_container">
+  <div class="grouping" id="chicago">
+    <h2>Chicago</h2>
+      <div class="person"
+          v-bind:class="{ poc: isPoc(person), unconfirmed: notConfirmed(person) }"
+          v-for="person in people">
+        <p>{{ person.name }}</p>
+        <p>{{ person.title}}</p>
+      </div>
+  </div>
+
+
+  <div class="grouping" id="lat">
+    <h2>LAT</h2>
+      <div class="person"
+          v-bind:class="{ poc: isPoc(person), unconfirmed: notConfirmed(person) }"
+          v-for="person in people">
+        <p>{{ person.name }}</p>
+        <p>{{ person.title}}</p>
+      </div>
+  </div>
 </div>
 
 <div style="clear:both"></div>
