@@ -16,7 +16,8 @@
 
 <body>
 
-<!-- masteads for NYT and WaPo -->
+
+<!-- mastheads for nyt and wapo -->
 <div class="graphic_container">
   <div class="grouping" id="nyt">
     <h2>NYT</h2>
@@ -30,7 +31,7 @@
 
 
   <div class="grouping" id="wapo">
-    <h2>Wapo</h2>
+    <h2>WaPo</h2>
       <div class="person"
           v-bind:class="{ poc: isPoc(person), unconfirmed: notConfirmed(person) }"
           v-for="person in people">
@@ -41,10 +42,60 @@
 
   <div style="clear:both"></div>
 
-   <p class="sourceLine">Source: sources</p>
-   <p class="sourceLine">Credit: Scott Pham / Voices</p>
+</div>
 
 
+<!-- npr and cnn -->
+<div class="graphic_container">
+  <div class="grouping" id="npr">
+    <h2>NPR</h2>
+      <div class="person"
+          v-bind:class="{ poc: isPoc(person), unconfirmed: notConfirmed(person) }"
+          v-for="person in people">
+        <p class="name">{{ person.name }}</p>
+        <p>{{ person.title}}</p>
+      </div>
+  </div>
+
+
+  <div class="grouping" id="cnn">
+    <h2>CNN</h2>
+      <div class="person"
+          v-bind:class="{ poc: isPoc(person), unconfirmed: notConfirmed(person) }"
+          v-for="person in people">
+        <p class="name">{{ person.name }}</p>
+        <p>{{ person.title}}</p>
+      </div>
+  </div>
+
+  <div style="clear:both"></div>
+
+</div>
+
+<!-- masteads for NYT and WaPo -->
+<div class="graphic_container">
+  <div class="grouping" id="wsj">
+    <h2>WSJ</h2>
+      <div class="person"
+          v-bind:class="{ poc: isPoc(person), unconfirmed: notConfirmed(person) }" 
+          v-for="person in people">
+        <p class="name">{{ person.name }}</p>
+        <p>{{ person.title}}</p>
+      </div>
+  </div>
+
+
+  <div class="grouping" id="fox">
+    <h2>Fox</h2>
+      <div class="person"
+          v-bind:class="{ poc: isPoc(person), unconfirmed: notConfirmed(person) }"
+          v-for="person in people">
+        <p class="name">{{ person.name }}</p>
+        <p>{{ person.title}}</p>
+      </div>
+  </div>
+
+  <div style="clear:both"></div>
 
 </div>
 
@@ -60,8 +111,6 @@
         <p>{{ person.title}}</p>
       </div>
    
-    <p class="sourceLine">Source: sources</p>
-    <p class="sourceLine">Credit: Scott Pham / Voices</p>
 
   </div>
 
@@ -82,7 +131,7 @@
   <h2>US</h2>
   <div class="graphic" id="graphic2"></div>
   <p class="sourceLine">Source: sources</p>
-  <p class="sourceLine">Credit: Scott Pham / Voices</p>
+  <p class="sourceLine">Credit: Scott Pham</p>
 
 </div>
 
@@ -146,7 +195,7 @@
     <h1>Minority representation in newsrooms</h1>
     <div class="graphic" id="graphic1"></div>
     <p class="sourceLine">Source: sources</p>
-    <p class="sourceLine">Credit: Scott Pham / Voices</p>
+    <p class="sourceLine">Credit: Scott Pham</p>
 
   </div>
 

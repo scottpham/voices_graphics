@@ -89,7 +89,7 @@ const app = {
   },
   init(){
     this.makeMinorityChart();
-    this.makeDemoChart();
+    //this.makeDemoChart();
     this.makeWapoChart();
     this.makeNYTChart();
     this.makeLATChart();

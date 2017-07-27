@@ -7,8 +7,12 @@ const nytData = require("../assets/nyt.json");
 const wapoData = require("../assets/wapo.json");
 const chicagoData = require("../assets/chicago.json");
 const latData = require("../assets/lat.json");
+const wsjData = require("../assets/wsj.json");
+const nprData = require("../assets/npr.json");
+const foxData = require("../assets/fox.json");
+const cnnData = require("../assets/cnn.json");
 
-const allData = [nytData, wapoData, chicagoData, latData];
+const allData = [nytData, wapoData, chicagoData, latData, wsjData, nprData, foxData, cnnData];
 
 allData.forEach( function(each){
    each.sort(function(a,b){
@@ -61,6 +65,36 @@ const lat = new BaseForm({
   }
 });
 
-window.nyt = nyt;
+const fox = new BaseForm({
+  el: "#fox",
+  data: {
+    people: foxData
+  }
+});
+
+
+const wsj = new BaseForm({
+  el: "#wsj",
+  data: {
+    people: wsjData
+  }
+});
+
+
+const cnn = new BaseForm({
+  el: "#cnn",
+  data: {
+    people: cnnData
+  }
+});
+
+
+const npr = new BaseForm({
+  el: "#npr",
+  data: {
+    people: nprData
+  }
+});
+
 
 export { nyt };

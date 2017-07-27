@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Jarl Mohn",
+        "title": "President and CEO",
+        "ethnicity": "white",
+        "gender": "male",
+        "confirmed": "yes"
+    },
+    {
+        "name": "Anya Grundmann",
+        "title": "Vice President, Programming and Audience Development",
+        "ethnicity": "white",
+        "gender": "female",
+        "confirmed": "yes"
+    },
+    {
+        "name": "Michael Oreskes",
+        "title": "Senior Vice President, News and Editorial Director",
+        "ethnicity": "white",
+        "gender": "male",
+        "confirmed": "yes"
+    },
+    {
+        "name": "Christopher Turpin",
+        "title": "Vice President, News Programming and Operations",
+        "ethnicity": "white",
+        "gender": "male",
+        "confirmed": "yes"
+    },
+    {
+        "name": "Keith Woods",
+        "title": "Vice President, Newsroom Training and Diversity",
+        "ethnicity": "black",
+        "gender": "male",
+        "confirmed": "yes"
+    }
+]
