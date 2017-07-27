@@ -1,6 +1,7 @@
 import { Chart } from "./chart.js";
 import { demoChart } from "./demo.js";
 import { wapoChart } from "./wapo.js";
+import { nyt } from "./execs.js"; 
 
 window.Chart = Chart;
 window.demoChart = demoChart;
@@ -43,7 +44,8 @@ const app = {
   },
   makeWapoChart(){
     const myChart = wapoChart.create({
-      el: "#graphic4"
+      el: "#graphic4",
+      colorRange: ["#004D80", "#CCEBFF"]
     });
 
      myChart.draw();
@@ -52,7 +54,8 @@ const app = {
   },
   makeDemoChart(){
     const myChart = demoChart.create({
-      el: "#graphic2"
+      el: "#graphic2",
+      color: ["#333333"]
     });
 
     myChart.draw();

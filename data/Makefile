@@ -1,7 +1,11 @@
 # move files to place where they can be useful
-move: newsroom_demo.json workforce.json
+move: newsroom_demo.json workforce.json nyt.json
 	cp workforce.json ../app/assets/
 	cp newsroom_demo.json ../app/assets/
+	cp nyt.json ../app/assets/
+
+nyt.json: nyt.csv
+	csvjson -i 4 nyt.csv > nyt.json
 
 # convert newsroom demo stuff
 newsroom_demo.json: newsroom_demo.csv

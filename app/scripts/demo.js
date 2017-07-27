@@ -1,3 +1,4 @@
+// demographics for the us
 import * as d3 from "d3";
 import * as _ from 'lodash';
 import { wrap } from './wrap.js';
@@ -21,7 +22,9 @@ _.keys(demoData).forEach( function(key){
         result.push(res);
       }  
   });
-    dData[key] = result;
+
+  dData[key] = result;
+
  });
 
 // use this
@@ -44,6 +47,7 @@ const demoChart = {
     });
     return instance;
   },
+  color: ["#000000"],
   margin: {
     left: 140,
     right: 30,
@@ -97,9 +101,9 @@ const demoChart = {
       .data(us)
       .enter()
       .append('rect')
-      .attr("class", "usBar")
       .attr('height', that.yScale.bandwidth())
       .attr('x', 0)
+      .attr("fill", this.color)
       .attr('y', function(d, i) { 
         return that.yScale(d.key); 
       })

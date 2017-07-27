@@ -10,10 +10,28 @@
 <![endif]-->
 
   <link rel="stylesheet" type="text/css" href="main.css">
-  </script>
 </head>
 
 <body>
+
+<div class="graphic_container">
+  <div class="graphic" id="nyt">
+    <table class="table">
+      <tr>
+        <th>Title</th>
+        <th>Name</th>
+      </tr> 
+     
+      <tr v-for="person in people"
+          v-bind:class="{ poc: isPoc(person) }">
+        <td>{{ person.title }} </td>
+        <td>{{ person.name }} </td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
 
 <div class="graphic_container">
   <h2>US</h2>

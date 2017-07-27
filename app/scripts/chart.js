@@ -22,6 +22,8 @@ const Chart = {
     });
     return instance;
   },
+  usColor: "#23423f",
+  newsroomColor: "yellow",
   margin: {
     left: 40,
     right: 30,
@@ -29,7 +31,7 @@ const Chart = {
     bottom: 35
   },
   el: "#graphic",
-  ratio: "0.7", //width-height ratio
+  ratio: "0.4", //width-height ratio
   parameters(){
     this.outerWidth = document.querySelector(this.el).clientWidth;
     this.width = this.outerWidth - this.margin.left - this.margin.right;
@@ -93,7 +95,7 @@ const Chart = {
       .datum(filteredData)
       .style("fill", "none")
       .style("stroke-linecap", "round")
-      .attr("class", "percent_us")
+      .attr("fill", this.usColor)
       .attr("d", this.line2);
   },
   drawAxes(){

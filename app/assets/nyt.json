@@ -1,0 +1,130 @@
+[
+    {
+        "title": "Executive Editor",
+        "name": "Dean Baquet",
+        "gender": "male",
+        "ethnicity": "african-american",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Managing Editor",
+        "name": "Joseph Kahn",
+        "gender": "male",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Deputy Managing Editor",
+        "name": "Rebecca Blumenstein",
+        "gender": "female",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Creative Director",
+        "name": "Tom Bodkin",
+        "gender": "male",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Deputy Managing Editor",
+        "name": "Janet Elder",
+        "gender": "female",
+        "ethnicity": "",
+        "confirmed": "no",
+        "link": "https://static01.nyt.com/images/2008/11/04/us/politics/3976_1_six_190x126.jpg"
+    },
+    {
+        "title": "Deputy Managing Editor",
+        "name": "Clifford Levy",
+        "gender": "male",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Deputy Managing Editor",
+        "name": "Matthew Purdy",
+        "gender": "male",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Assistant Editor",
+        "name": "Rebecca Corbett",
+        "gender": "woman",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Assistant Editor",
+        "name": "Sam Dolnick",
+        "gender": "male",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Assistant Editor",
+        "name": "Steve Duenes",
+        "gender": "male",
+        "ethnicity": "hispanic",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Assistant Editor",
+        "name": "Alexandra MacCallum",
+        "gender": "female",
+        "ethnicity": "",
+        "confirmed": "",
+        "link": "http://www.nytco.com/alex-maccallum-named-head-of-nyt-video/ "
+    },
+    {
+        "title": "Assistant Editor",
+        "name": "Michele McNally",
+        "gender": "woman",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Assistant Editor",
+        "name": "Alison Mitchell",
+        "gender": "woman",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Assistant Editor",
+        "name": "Carolyn Ryan",
+        "gender": "woman",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Editorial Page Editor",
+        "name": "James Bennet",
+        "gender": "male",
+        "ethnicity": "white",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "title": "Deputy Editorial Page Editor",
+        "name": "James Dao",
+        "gender": "male",
+        "ethnicity": "asian-american",
+        "confirmed": "",
+        "link": ""
+    }
+]
