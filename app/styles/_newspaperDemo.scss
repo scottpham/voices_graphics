@@ -8,16 +8,8 @@
   }
 }
 
-// wapo
-#graphic3 {
-}
-
-#graphic4 {
-
-}
-
 span.label {
-  font-size: 13px;
+  font-size: 12px;
   font-family: $sans;
   padding: 5px;
   display: inline-block;
@@ -30,13 +22,12 @@ span#wapo {
   color: white;
 }
 
-
-
 span.msa {
-  background-color: #333333;
+  background-color: #B3B3B3;
   color: white;
 }
 
 span.us {
-  background-color: #B3B3B3;
+  background-color: #333333;
+  color: white;
 }

@@ -12,7 +12,7 @@ const allData = [nytData, wapoData, chicagoData, latData];
 
 allData.forEach( function(each){
    each.sort(function(a,b){
-    return d3.ascending(a.ethnicity, b.ethnicity);
+    return d3.ascending(a.name, b.name);
   });
 });
 

@@ -4,23 +4,23 @@
         "title": "Editor and Publisher",
         "gender": "Male",
         "ethnicity": "Indian",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
-        "name": "Marc Duvoison",
+        "name": "Marc Duvoisin",
         "title": "Managing Editor",
         "gender": "Male",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
-        "name": "Lawrence Ingrassis",
+        "name": "Lawrence Ingrassia",
         "title": "Managing Editor",
         "gender": "Male",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -28,7 +28,7 @@
         "title": "Deputy Managing Editor",
         "gender": "Male",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -36,7 +36,7 @@
         "title": "Deputy Managing Editor",
         "gender": "Female",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -44,7 +44,7 @@
         "title": "Deputy Managing Editor",
         "gender": "Male",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -52,7 +52,7 @@
         "title": "Assistant Managing Editor",
         "gender": "Female",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -60,7 +60,7 @@
         "title": "Assistant Managing Editor",
         "gender": "Male",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -68,7 +68,7 @@
         "title": "Assistant Managing Editor",
         "gender": "Female",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -76,7 +76,7 @@
         "title": "Assistant Managing Editor",
         "gender": "Female",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -84,7 +84,7 @@
         "title": "Assistant Managing Editor",
         "gender": "Female",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -92,7 +92,7 @@
         "title": "Assistant Managing Editor",
         "gender": "Male",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -100,15 +100,15 @@
         "title": "Editorial Page Editor",
         "gender": "Male",
         "ethnicity": "White",
-        "confirmed": "no",
+        "confirmed": "yes",
         "link": ""
     },
     {
-        "name": "Juliet Lapidos",
-        "title": "Op-Ed and Sunday Opinion Editor",
+        "name": "Juliet Lapidos*",
+        "title": "Op-Ed Editor",
         "gender": "Female",
-        "ethnicity": "Jewish",
-        "confirmed": "no",
+        "ethnicity": "White",
+        "confirmed": "yes",
         "link": ""
     }
 ]

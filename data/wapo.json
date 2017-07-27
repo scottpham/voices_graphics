@@ -1,6 +1,6 @@
 [
     {
-        "name": "Frederick J. Ryan",
+        "name": "Frederick J. Ryan Jr.",
         "title": "Publisher and Chief Executive Officer",
         "gender": "Male",
         "ethnicity": "White",
@@ -8,11 +8,19 @@
         "link": ""
     },
     {
+        "name": "Cameron Barr",
+        "title": "Managing Editor",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "yes",
+        "link": ""
+    },
+    {
         "name": "Martin Baron",
         "title": "Executive Editor",
         "gender": "Male",
         "ethnicity": "White",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -20,7 +28,7 @@
         "title": "Managing Editor",
         "gender": "Male",
         "ethnicity": "Hispanic",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -28,7 +36,7 @@
         "title": "Deputy Managing Editor",
         "gender": "Female",
         "ethnicity": "White",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -36,7 +44,7 @@
         "title": "Deputy Managing Editor",
         "gender": "Male",
         "ethnicity": "White",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -44,7 +52,7 @@
         "title": "Deputy Managing Editor",
         "gender": "Female",
         "ethnicity": "White",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -52,7 +60,7 @@
         "title": "Editorial Page Editor",
         "gender": "Female",
         "ethnicity": "White",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -60,7 +68,7 @@
         "title": "Deputy Editorial Page Editor",
         "gender": "Male",
         "ethnicity": "White",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -68,7 +76,7 @@
         "title": "Deputy Editorial Page Editor",
         "gender": "Female",
         "ethnicity": "White",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -76,7 +84,7 @@
         "title": "Associate Editorial Page Editor",
         "gender": "Female",
         "ethnicity": "White",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     }
 ]

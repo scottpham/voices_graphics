@@ -4,7 +4,7 @@
         "name": "Dean Baquet",
         "gender": "male",
         "ethnicity": "african-american",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -12,7 +12,7 @@
         "name": "Joseph Kahn",
         "gender": "male",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -20,7 +20,7 @@
         "name": "Rebecca Blumenstein",
         "gender": "female",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -28,7 +28,7 @@
         "name": "Tom Bodkin",
         "gender": "male",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -44,7 +44,7 @@
         "name": "Clifford Levy",
         "gender": "male",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -52,7 +52,7 @@
         "name": "Matthew Purdy",
         "gender": "male",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -60,7 +60,7 @@
         "name": "Rebecca Corbett",
         "gender": "woman",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -68,7 +68,7 @@
         "name": "Sam Dolnick",
         "gender": "male",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -76,7 +76,7 @@
         "name": "Steve Duenes",
         "gender": "male",
         "ethnicity": "hispanic",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -84,7 +84,7 @@
         "name": "Alexandra MacCallum",
         "gender": "female",
         "ethnicity": "",
-        "confirmed": "",
+        "confirmed": "no",
         "link": "http://www.nytco.com/alex-maccallum-named-head-of-nyt-video/ "
     },
     {
@@ -92,7 +92,7 @@
         "name": "Michele McNally",
         "gender": "woman",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -100,7 +100,7 @@
         "name": "Alison Mitchell",
         "gender": "woman",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -108,7 +108,7 @@
         "name": "Carolyn Ryan",
         "gender": "woman",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -116,7 +116,7 @@
         "name": "James Bennet",
         "gender": "male",
         "ethnicity": "white",
-        "confirmed": "",
+        "confirmed": "yes",
         "link": ""
     },
     {
@@ -124,7 +124,23 @@
         "name": "James Dao",
         "gender": "male",
         "ethnicity": "asian-american",
-        "confirmed": "",
+        "confirmed": "yes",
+        "link": ""
+    },
+    {
+        "title": "Publisher, Chairman ",
+        "name": "Arthur Ochs Sulzberger Jr.",
+        "gender": "male",
+        "ethnicity": "",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "title": "Deputy Publisher",
+        "name": "A.G. Sulzberger",
+        "gender": "male",
+        "ethnicity": "",
+        "confirmed": "no",
         "link": ""
     }
 ]
