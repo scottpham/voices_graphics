@@ -4,6 +4,7 @@ const Vue = require("./vue.js");
 
 window.Vue = Vue;
 const nytData = require("../assets/nyt.json");
+const wapoData = require("../assets/wapo.json");
 
 nytData.sort(function(a,b){
   return d3.ascending(a.ethnicity, b.ethnicity);
@@ -11,26 +12,36 @@ nytData.sort(function(a,b){
 
 console.log(nytData);
 
-const nyt = new Vue({
-  el: '#nyt',
-  data: {
-    people: nytData
-  },
-  methods: {
+const BaseForm = Vue.extend({
+   methods: {
     isPoc: function(person){
-      if (person.ethnicity != "white"){
+      if ( person.ethnicity.toUpperCase() != "WHITE"){
         return true;
       }
     },
     notConfirmed: function(person){
       if (person.confirmed == "no"){
         return true;
-      }else {
+      } else {
         return false;
       }
     }
   }
 });
+
+const nyt = new BaseForm({
+ el: '#nyt',
+  data: {
+    people: nytData
+  }
+});
+
+const wapo = new BaseForm({
+  el: "#wapo",
+  data: {
+    people: wapoData
+  }
+})
 
 window.nyt = nyt;
 

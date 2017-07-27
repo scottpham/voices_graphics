@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Frederick J. Ryan",
+        "title": "Publisher and Chief Executive Officer",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "no",
+        "link": ""
+    },
+    {
+        "name": "Martin Baron",
+        "title": "Executive Editor",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "name": "Emilio Garcia-Ruiz",
+        "title": "Managing Editor",
+        "gender": "Male",
+        "ethnicity": "Hispanic",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "name": "Tracy Grant",
+        "title": "Deputy Managing Editor",
+        "gender": "Female",
+        "ethnicity": "White",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "name": "Scott Vance",
+        "title": "Deputy Managing Editor",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "name": "Barbara Vobejda",
+        "title": "Deputy Managing Editor",
+        "gender": "Female",
+        "ethnicity": "White",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "name": "Fred Hiatt",
+        "title": "Editorial Page Editor",
+        "gender": "Female",
+        "ethnicity": "White",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "name": "Jackson Diehl",
+        "title": "Deputy Editorial Page Editor",
+        "gender": "Male",
+        "ethnicity": "White",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "name": "Ruth Marcus",
+        "title": "Deputy Editorial Page Editor",
+        "gender": "Female",
+        "ethnicity": "White",
+        "confirmed": "",
+        "link": ""
+    },
+    {
+        "name": "Jo-Ann Armao",
+        "title": "Associate Editorial Page Editor",
+        "gender": "Female",
+        "ethnicity": "White",
+        "confirmed": "",
+        "link": ""
+    }
+]
