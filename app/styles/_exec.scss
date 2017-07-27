@@ -41,13 +41,18 @@ div.person {
 
   p {
     color: $black;
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 5px;
     margin-bottom: 0px;
     margin-left: 2px;
     margin-right: 2px;
     line-height: 15px;
     text-align: center;
+  }
+
+  p.name {
+    font-size: 13px;
+    font-weight: bold;
   }
 }
 
