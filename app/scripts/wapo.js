@@ -22,7 +22,7 @@ const wapoChart = {
   },
   paper: 'wapo',
   msa: 'washington_msa',
-  colorRange: ["#004D80", "#CCEBFF"],
+  colorRange: ["#004D80", "#CCEBFF", "black"],
   margin: {
     left: 90,
     right: 20,
@@ -48,10 +48,10 @@ const wapoChart = {
 
     // scale for location groupings (define range based on y1)
     this.y0Scale = d3.scaleBand()
-      .domain([this.paper, this.msa])
+      .domain([this.paper, "us", this.msa])
       .paddingInner(0.15);
 
-    // scale for race groupings (whole chart up to down) 
+    // sc'le for race groupings (whole chart up to down) 
     this.y1Scale = d3.scaleBand()
       .padding(0.2)
       .rangeRound([this.height, 0])
@@ -62,7 +62,7 @@ const wapoChart = {
       .range([0, this.y1Scale.bandwidth()]);
 
     this.colorScale = d3.scaleOrdinal()
-      .domain([this.paper, this.msa])
+      .domain([this.paper, "us", this.msa])
       .range(this.colorRange);
   },
   drawPlot(){
@@ -86,7 +86,6 @@ const wapoChart = {
       .data(dData[place])
       .enter().append("rect")
         .attr("class", "rect")
-        .attr("fill", "black")
       .attr("transform", function( d,i ) { 
         return `translate(0, ${that.y0Scale(place)} )`; 
       })
@@ -126,13 +125,23 @@ const wapoChart = {
       .attr("class", "grid")
       .call(this.yGrid);
   },
+  colorText(){
+    // text box
+    const el = `span#${this.paper}`;
+    console.log(document.querySelector(el));
+    // color
+    const color = this.colorScale(this.paper);
+    document.querySelector(el).style.backgroundColor = color;
+  },
   draw(){
     this.parameters();
     this.createScales();
     this.drawPlot();
     this.drawAxes();
     this.drawData(this.paper);
+    this.drawData("us");
     this.drawData(this.msa);
+    this.colorText();
   }
 }
 

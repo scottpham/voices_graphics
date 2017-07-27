@@ -12,7 +12,8 @@ const app = {
       el: "#graphic5",
       paper: 'lat',
       msa: 'la_msa',
-      colorRange: ["#004D36", "#00B37C"]
+      colorRange: ["#D1B815", "#333333", "#B3B3B3"]
+
     });
 
     myChart.draw();
@@ -24,7 +25,7 @@ const app = {
       el: "#graphic6",
       paper: "wsj",
       msa: "new_york_msa",
-      colorRange: ["#7D251C","#D24435"]
+      colorRange: ["#004D36", "#333333", "#B3B3B3"]
     });  
 
     myChart.draw();
@@ -36,7 +37,7 @@ const app = {
       el: '#graphic3',
       paper: 'nyt',
       msa: 'new_york_msa',
-      colorRange: ["#AA5C09", "#F38C21"],
+      colorRange: ["#7D251C", "#333333", "#B3B3B3"]
     });
 
     myChart.draw();
@@ -45,7 +46,10 @@ const app = {
   makeWapoChart(){
     const myChart = wapoChart.create({
       el: "#graphic4",
-      colorRange: ["#004D80", "#CCEBFF"]
+      paper: "wapo",
+      msa: 'washington_msa',
+      // red, gray, light gray
+      colorRange: ["#AA5C09", "#333333", "#B3B3B3"]
     });
 
      myChart.draw();
@@ -55,7 +59,7 @@ const app = {
   makeDemoChart(){
     const myChart = demoChart.create({
       el: "#graphic2",
-      color: ["#333333"]
+      color: "#333333"
     });
 
     myChart.draw();

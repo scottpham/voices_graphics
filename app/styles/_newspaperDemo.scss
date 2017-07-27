@@ -20,4 +20,24 @@ span.label {
   font-size: 14px;
   font-family: $sans;
   padding: 5px;
+  display: inline-block;
+  margin-top: 5px;
+
+
+}
+
+span#wapo {
+ // background-color: #7D251C;
+  color: white;
+}
+
+
+
+span.msa {
+  background-color: #333333;
+  color: white;
+}
+
+span.us {
+  background-color: #B3B3B3;
 }
