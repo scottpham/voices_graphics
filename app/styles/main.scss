@@ -1,4 +1,4 @@
-$sans: Helvetica,
+$sans: Roboto,
 sans-serif;
 $black: #222;
 $gray: #666;
@@ -37,6 +37,14 @@ p {
   color: $black;
   font-family: $sans;
   font-size: 20px;
+}
+
+p.sourceLine {
+  color: $gray;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-family: $sans;
+  font-size: 12px;
 }
 
 .grid {
