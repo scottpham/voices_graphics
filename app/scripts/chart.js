@@ -74,12 +74,12 @@ const Chart = {
       .datum(workforceData)
       .style("fill", "none")
       .style("stroke-linecap", "round")
-      .attr("class", "percent_workforce")
+      .attr("stroke", this.newsroomColor)
+      .attr('stroke-width', 3)
       .attr("d", this.line);
   },
   drawUS(){
     const that = this;
-   
     // filter data because some values are null
     const filteredData = workforceData.filter(function(d){
       return d.percent_minority_us > 1;
@@ -95,7 +95,8 @@ const Chart = {
       .datum(filteredData)
       .style("fill", "none")
       .style("stroke-linecap", "round")
-      .attr("fill", this.usColor)
+      .attr("stroke", this.usColor)
+      .attr("stroke-width", "3px")
       .attr("d", this.line2);
   },
   drawAxes(){
@@ -130,8 +131,8 @@ const Chart = {
     this.plot.selectAll("circle")
         .data(this.filteredData)
       .enter().append("circle")
-        .attr('class', "percent_us")
         .attr("r", 5)
+        .attr("fill", this.usColor)
         .attr("cx", d => { return this.xScale(d.year) })
         .attr("cy", d => { return this.yScale(d.percent_minority_us) })
   },

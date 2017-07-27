@@ -63,7 +63,9 @@ const app = {
   },
   makeMinorityChart(){
    const myChart = Chart.create({
-     el: "#graphic1"
+     el: "#graphic1",
+     usColor: "#004D80",
+     newsroomColor: "#F38C21"
    });
    myChart.draw();
    window.chart1 = myChart;
