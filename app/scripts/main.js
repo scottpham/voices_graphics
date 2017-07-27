@@ -13,7 +13,9 @@ const app = {
       paper: 'lat',
       msa: 'la_msa',
       // dark-yellow, dark gray, light gray
-      colorRange: ["#7F5E00", "#333333", "#7F7F7F"]
+      //colorRange: ["#7F5E00", "#333333", "#7F7F7F"]
+      colorRange: ["#005EFF", "#333333", "#7F7F7F"]
+
     });
 
     myChart.draw();
@@ -26,7 +28,9 @@ const app = {
       paper: "wsj",
       msa: "new_york_msa",
       // dark green, dark gray, light gray
-      colorRange: ["#627F08", "#333333", "#7F7F7F"]
+      //colorRange: ["#627F08", "#333333", "#7F7F7F"]
+      colorRange: ["#9dbf0d", "#333333", "#7F7F7F"]
+
     });  
 
     myChart.draw();
@@ -39,7 +43,9 @@ const app = {
       paper: 'nyt',
       msa: 'new_york_msa',
       // purple, dark gray, light gray
-      colorRange: ["#35337F", "#333333", "#7F7F7F"]
+      //colorRange: ["#35337F", "#333333", "#7F7F7F"]
+      colorRange: ["#7466FF", "#333333", "#7F7F7F"]
+
     });
 
     myChart.draw();
@@ -51,7 +57,9 @@ const app = {
       paper: "wapo",
       msa: 'washington_msa',
       // red, gray, light gray
-      colorRange: ["#7F180D", "#333333", "#7F7F7F"]
+      //colorRange: ["#7F180D", "#333333", "#7F7F7F"]
+      colorRange: ["#FF301A", "#333333", "#7F7F7F"]
+
     });
 
      myChart.draw();

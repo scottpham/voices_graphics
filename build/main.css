@@ -96,7 +96,7 @@ span.us {
     border-bottom: 1px solid #888888;
     padding: 10px; }
   .table tr.poc {
-    background-color: #00347F;
+    background-color: #005EFF;
     color: white; }
 
 div.personBox {
@@ -126,7 +126,7 @@ div.person {
     font-weight: bold; }
 
 div.person.poc {
-  background-color: #00347F; }
+  background-color: #005EFF; }
   div.person.poc p {
     color: white; }
 
