@@ -59,7 +59,7 @@ const app = {
   makeDemoChart(){
     const myChart = demoChart.create({
       el: "#graphic2",
-      color: "#333333"
+      color: "#004D80"
     });
 
     myChart.draw();
